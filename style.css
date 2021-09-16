@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+:root{
+    --holvampBgBlack: #191919;
+    --holvampFontFamily:'Nunito Sans', sans-serif;
+}
+
+.costum-bg-color {
+    background-color: var(--holvampBgBlack);
+}
+
+* {
+    font-family: var(--holvampFontFamily) !important;
+    list-style: none;
+}
+
+body{
+    
+    background-color: var(--holvampBgBlack);
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    margin-left: 10px;
+}
+
+ul li a img {
+    margin-right: 4px;
+}
+
+.row:nth-child(1) {
+    margin-top: 20%;
+}

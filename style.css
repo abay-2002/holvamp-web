@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
 :root{
     /* holvamp-color */
     --holvampBlueColor: #00A9D2;
@@ -48,17 +48,17 @@ ul li a img {
 
 
 /* ==== nav ==== */
-.brightness:hover{
+.nav-link:hover{
     filter: brightness(1);
     transition: .3s;
 }
 
-.brightness { 
+.nav-link { 
     filter: brightness(0.50); 
     transition: .3s;
 }
 
-.target:target{
+.nav-link:focus{
     filter: brightness(1);
 }
 
@@ -66,7 +66,7 @@ ul li a img {
 
 /* banner */
 #banner {
-    height: 80vh;
+    height: 90vh;
     background-image: url(assets/img/banner/holvamp-web-banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -82,15 +82,19 @@ ul li a img {
     transform: translateX(-50%) translateY(-50%);
 }
 
+#welcome-text {
+    font-family: 'Rubik', sans-serif !important;
+}
+
 @media only screen and (min-width: 1000px){
     #welcome-text {
-        font-size: 94px;
+        font-size: 84px;
     }
 }
 
 @media only screen and (max-width: 768px){
     #banner {
-        height: 80vh;
+        height: 90vh;
         background-image: url(assets/img/banner/holvamp-web-banner.jpg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -103,6 +107,8 @@ ul li a img {
 
 }
 
-@media only screen and (max-width: 995px){
-
+@media only screen and (min-width: 995px){
+    .ui-desc {
+        display: none !important;
+    }
 }

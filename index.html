@@ -11,52 +11,73 @@
     <!-- vanilla CSS -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- favicon -->
     <link rel="icon" href="assets/img/logo/holvamp-favicon.png" type="image/gif" sizes="16x16">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
 
     <title>Holvamp</title>
   </head>
   <body>
+    <div id="root">
 
     <nav class="navbar navbar-expand-lg navbar-dark costum-bg-color">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-              <img src="assets/img/logo/web-navbar-brand300x50.png" alt="">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active"  href="#">Home</a>
-              </li>
-            </ul>
+          
+            
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/logo/web-navbar-brand300x50.png">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#" >
+                    <img src="assets/img/ui/home-white.png" class="brightness target" data-bs-toggle="tooltip" data-bs-placement="bottom" title="About">
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><img src="assets/img/ui/youtube-white.png" class="brightness target" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Video"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><img src="assets/img/ui/media-white.png" class="brightness target" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Social"></a>
+                </li>
+                <!-- 
+                  <li class="nav-item">
+                  <a class="nav-link active"  href="#">Blog</a>
+                </li>
+                  -->
+              </ul>  
           </div>
+          
         </div>
       </nav>
 
+      <!-- === DASHBOARD === -->
+      <!-- banner -->
+      <div id="banner">
+        <div class="banner-text">
+        <h1 class="text-center text-wrap" id="welcome-text">Hello World!</h1>
+        <p class="text-center text-wrap">assumenda rerum perferendis commodi quas adipisci veritatis omnis ut.</p>
+        </div>
+      </div>
 
-    <div class="container position-relative">
-        <div class="row">
-            <div class="text-center text-light">
-                <h1 class="text-center">This site is underconstruction :D</h1>
-                <h3 class="text-center">visit us:</h3>
-            </div>
-        </div>
-        <div class="row">    
-            <ul class="text-center">
-                <li><a href="https://www.instagram.com/holvamp/" target="blank"><img width="12px" src="assets/img/contactlogo/logoig.png" alt="">Instagram</a></li>
-                <li><a href="https://www.youtube.com/channel/UCPTBQ8AxU-wsWVcdVgr55Yg" target="blank"><img width="12px" src="assets/img/contactlogo/youtubelogowhite.png" alt="">Youtube</a></li>
-            </ul>
-        </div>
+
     </div>
-
-
   </body>
+  <!-- vanilla javascript -->
+  <script type="module" src="./js/main.js"></script>
+
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-  <!-- vanilla javascript -->
-  <script src="js/script.js"></script>
+  <!-- jquery cdn -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
 
 </html>

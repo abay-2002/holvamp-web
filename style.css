@@ -1,22 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
 
 :root{
+    /* holvamp-color */
+    --holvampBlueColor: #00A9D2;
+    /* bg-color */
     --holvampBgBlack: #191919;
+    /* font */
     --holvampFontFamily:'Nunito Sans', sans-serif;
+    --holvampFontMediumBoldWeight: 600;
+    --holvampFontColorWhite: #f0f0f0;
+
+
 }
 
 .costum-bg-color {
     background-color: var(--holvampBgBlack);
 }
 
-* {
+*, h1, h2, h3, h4, h5, h6 {
     font-family: var(--holvampFontFamily) !important;
+    font-weight: var(--holvampFontMediumBoldWeight);
     list-style: none;
 }
 
+p {
+    font-weight: 400;
+}
+
+/* === BODY === */
+
 body{
-    
-    background-color: var(--holvampBgBlack);
+    /* background-color: var(--holvampBgBlack); */
+    color: var(--holvampFontColorWhite);
 }
 
 ul li {
@@ -31,6 +46,63 @@ ul li a img {
     margin-right: 4px;
 }
 
-.row:nth-child(1) {
-    margin-top: 20%;
+
+/* ==== nav ==== */
+.brightness:hover{
+    filter: brightness(1);
+    transition: .3s;
+}
+
+.brightness { 
+    filter: brightness(0.50); 
+    transition: .3s;
+}
+
+.target:target{
+    filter: brightness(1);
+}
+
+
+
+/* banner */
+#banner {
+    height: 80vh;
+    background-image: url(assets/img/banner/holvamp-web-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -300px;
+        
+    
+}
+
+#banner .banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+@media only screen and (min-width: 1000px){
+    #welcome-text {
+        font-size: 94px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #banner {
+        height: 80vh;
+        background-image: url(assets/img/banner/holvamp-web-banner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -100px;
+
+    }      
+    #welcome-text {
+        font-size: 34px;
+    }  
+
+}
+
+@media only screen and (max-width: 995px){
+
 }

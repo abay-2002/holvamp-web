@@ -22,7 +22,6 @@
     background-color: var(--holvampBgWhite);
 }
 
-
 *, h1, h2, h3, h4, h5, h6 {
     font-family: var(--holvampFontFamily) !important;
     font-weight: var(--holvampFontMediumBoldWeight);
@@ -115,7 +114,7 @@ nav {
 }
 
 
-
+ 
 /* banner */
 #banner {
     height: 90vh;

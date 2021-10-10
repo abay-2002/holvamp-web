@@ -1,9 +1,12 @@
 // ES6 export
-export default function Navbar(){
+
+import {default as Home} from './home.js';
+import {default as YoutubePage} from './youtubepage.js';
+import {default as Footer} from './footer.js';
+export default function AppRender(){
     $('#root').html(`
     <nav class="navbar navbar-expand-lg navbar-dark costum-bg-color">
-    <div class="container-fluid">
-      
+    <div class="container-fluid">      
         <a class="navbar-brand" href="#">
             <img src="assets/img/logo/web-navbar-brand200x33.png">
         </a>
@@ -38,9 +41,29 @@ export default function Navbar(){
               -->
           </ul>  
         </div>
-
     </div>
   </nav>
     `);
-};
+  // logika halaman/page pada navbar
+  // let kategori = $('')
 
+  $('.nav-link').on('click',function(){
+    let kategori = $(this).attr('title');
+    console.log(kategori);
+    if(kategori == 'home'){
+      console.log('ini page home');
+      $('#root').html('');
+      AppRender();
+      Home();
+      Footer();
+    }else if(kategori == 'youtube'){
+      console.log('ini page youtube');
+      $('#root').html('');
+      AppRender();
+      YoutubePage();
+      Footer();
+    }else if(kategori == 'social'){
+      console.log('ini page social');
+    }
+  });
+};

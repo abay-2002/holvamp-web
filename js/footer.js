@@ -10,7 +10,6 @@ export default function Footer(){
             </ul>
             <p class="text-center text-muted">&copy; 2021 Holvamp</p>
             <p class="text-center text-muted">By: <a href="http://akbarangkasa.com/" target="blank">akbar angkasa</a></p>
-
         </footer>
         </div>
     </div>

@@ -23,7 +23,7 @@
 }
 
 *, h1, h2, h3, h4, h5, h6 {
-    font-family: var(--holvampFontFamily) !important;
+    font-family: var(--holvampFontFamilyHTag) !important;
     font-weight: var(--holvampFontMediumBoldWeight);
     list-style: none;
 }
@@ -78,7 +78,7 @@ body{
     /* background-color: var(--holvampBgBlack); */
     /* background-color: #F6F6F6; */
     color: var(--holvampFontColorWhite);
-    height: 100%;;
+    height: 100%;
 }
 
 ul li {
@@ -245,7 +245,65 @@ nav {
 }
 
 
-/* footer */
+
+/* YOUTUBE */
+#youtube-page .yt-wrapper {
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--holvampFontColorBlack);
+}
+
+#yt-subscriber-count-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 4px;
+    box-sizing: border-box;
+}
+
+#yt-subscriber-count-wrapper img {
+    border-radius: 50%;
+    width: 165px;
+}
+
+
+
+/* #yt-profile-picture {
+    width: 165px;
+    height: 165px;
+    background-image: url(/assets/img/logo/holvamp-logo-bgblack-v.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 50%;
+    background-color: salmon;
+} */
+
+#yt-title-subs-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#yt-subscriber-count, #yt-channel-title {
+    font-weight: var(--holvampFontMediumBoldWeight);
+    font-family: var(--holvampFontFamily) !important;
+}
+
+@media only screen and (min-width:768px){
+    #youtube-page .yt-wrapper {
+        width: 50%;
+    }
+}
+
+/* SOCIAL */
 footer ul li a:hover {
     color: var(--holvampFontColorBlack) !important;
     opacity: 50%;

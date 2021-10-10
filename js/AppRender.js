@@ -23,13 +23,13 @@ export default function AppRender(){
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" title="youtube">
+                <a class="nav-link" href="#youtube" title="youtube">
                     <img src="assets/img/ui/youtube-white.png" class="brightness" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Youtube">
                     <span class="ui-desc">Youtube</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" title="social">
+                <a class="nav-link" href="#social" title="social">
                     <img src="assets/img/ui/media-white.png" class="brightness" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Social">
                     <span class="ui-desc">Social</span>
                 </a>

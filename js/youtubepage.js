@@ -17,7 +17,7 @@ export default function YoutubePage(){
         </div>
     </div>
     `);
-
+    }
     var youtubeDataAPIThumbAndSubsCount = {
         "url": "https://youtube.googleapis.com/youtube/v3/channels?part=snippet%2Cstatistics&id=UCPTBQ8AxU-wsWVcdVgr55Yg&key=AIzaSyCARVJX9BRzK7WVfLJ5lyCOe5dABy-KfeQ",
         "method": "GET",
@@ -49,7 +49,7 @@ export default function YoutubePage(){
         </div>
         `);  
     });
-    }
+    
     youtubePageShow();  
     // API untuk video
     // exceed API

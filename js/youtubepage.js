@@ -10,9 +10,7 @@ export default function YoutubePage(){
             </div>
             <div class="ratio ratio-16x9" id="yt-video-embed-wrapper">
                 <!-- append -->
-                <iframe
-                src="https://www.youtube.com/embed/cYbnVQLOBs0">
-                </iframe>
+                
             </div>
         </div>
     </div>
@@ -50,29 +48,30 @@ export default function YoutubePage(){
         `);  
     });
     
-    youtubePageShow();  
+    
     // API untuk video
     // exceed API
-    // var youtubeAPIDataVideo = {
-    //     "url": "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCPTBQ8AxU-wsWVcdVgr55Yg&key=AIzaSyCARVJX9BRzK7WVfLJ5lyCOe5dABy-KfeQ&maxResults=1&order=date",
-    //     "method": "GET",
-    //     "timeout": 0,
-    // };
+    var youtubeAPIDataVideo = {
+        "url": "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCPTBQ8AxU-wsWVcdVgr55Yg&key=AIzaSyCARVJX9BRzK7WVfLJ5lyCOe5dABy-KfeQ&maxResults=1&order=date",
+        "method": "GET",
+        "timeout": 0,
+    };
     
-    // $.ajax(youtubeAPIDataVideo).done(function (response) {
-    //     let ytData = response;
-    //     // console.log(ytData);
-    //     let items = ytData.items;
-    //     $.each(items, function(i,elements){
-    //         let videoId = elements.id.videoId;
-    //         console.log(videoId);
-    //         $('#yt-video-embed-wrapper').append(`
-    //             <iframe
-    //                 src="https://www.youtube.com/embed/${videoId}">
-    //             </iframe>
-    //         `);
-    //     });
-    // });
+    $.ajax(youtubeAPIDataVideo).done(function (response) {
+        let ytData = response;
+        // console.log(ytData);
+        let items = ytData.items;
+        $.each(items, function(i,elements){
+            let videoId = elements.id.videoId;
+            console.log(videoId);
+            $('#yt-video-embed-wrapper').append(`
+                <iframe
+                    src="https://www.youtube.com/embed/${videoId}">
+                </iframe>
+            `);
+        });
+    });
+    youtubePageShow();  
 
    
 }

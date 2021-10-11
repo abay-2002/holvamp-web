@@ -33,7 +33,10 @@ h1 {
 }
 
 p {
-    font-weight: 400;
+    /* font-weight: 400; */
+    /* color: salmon; */
+    color: var(--holvampFontColorBlack);
+    font-family: var(--holvampFontFamily) !important;
 }
 
 .costum-font-color-white {
@@ -109,9 +112,6 @@ nav {
     transition: .3s;
 }
 
-
-
- 
 /* banner */
 #banner {
     height: 90vh;
@@ -126,6 +126,10 @@ nav {
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+}
+
+.banner-text p {
+    color: var(--holvampFontColorWhite) !important;
 }
 
 #welcome-text {

@@ -19,20 +19,20 @@ export default function Footer(){
         </div>
     </div>
     `);
-    $('.nav-link').on('click', function(){
-        let footerLink = $(this).attr('title');
-        console.log(footerLink);
-        if(footerLink == 'home'){
-            $('#root').html('');
-            AppRender();
-            Home();
-            Footer();
-          }else if(footerLink == 'youtube'){
-            $('#root').html('');
-            AppRender();
-            YoutubePage();
-            Footer();
-          }else if(footerLink == 'social'){
-          }
-    });
+    // $('.nav-link').on('click', function(){
+    //     let footerLink = $(this).attr('title');
+    //     console.log(footerLink);
+    //     if(footerLink == 'home'){
+    //         $('#root').html('');
+    //         AppRender();
+    //         Home();
+    //         Footer();
+    //       }else if(footerLink == 'youtube'){
+    //         $('#root').html('');
+    //         AppRender();
+    //         // YoutubePage();
+    //         Footer();
+    //       }else if(footerLink == 'social'){
+    //       }
+    // });
 }
